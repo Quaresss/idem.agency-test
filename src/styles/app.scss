@@ -1,0 +1,238 @@
+@import "./components/_all";
+@import url('https://fonts.cdnfonts.com/css/baron-neue');
+@import url('https://fonts.cdnfonts.com/css/lato');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1440px) {
+  .container {
+    width: 687px;
+  }
+
+  .about-us {
+    padding-top: 60px;
+    min-height: 1441px;
+    height: unset;
+  }
+
+  .about-us__title {
+    margin-bottom: 50px;
+  }
+
+  .about-us__content {
+    min-height: 1121px;
+    height: unset;
+  }
+
+  .about-us__find-more {
+    display: inline-block;
+    margin-bottom: 58px;
+  }
+
+  .about-us__info {
+    margin-bottom: 60px;
+  }
+
+  .about-us__main-image {
+    position: initial;
+    height: 478px;
+  }
+
+  .about-us__image {
+    width: 33%;
+  }
+
+  .about-us__image-group {
+    position: relative;
+    right: auto;
+    display: flex;
+  }
+
+  .about-us__menu-item:last-child {
+    display: none;
+  }
+
+  .on-map {
+    height: 726px;
+    padding: 60px 40px;
+  }
+
+  .on-map__content {
+    padding-left: 0;
+    flex-direction: column;
+  }
+
+  .on-map__map {
+    width: 100%;
+    height: 450px;
+  }
+
+  .on-map__menu {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 0;
+    flex-direction: row;
+    margin-bottom: 16px;
+  }
+
+  .features {
+    padding: 60px 40px 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 347px;
+  }
+
+  .about-us {
+    min-height: 1433px;
+    height: unset;
+  }
+
+  .about-us__content {
+    min-height: 1045px;
+    height: unset;
+  }
+
+  .about-us__find-more {
+    margin-bottom: 48px;
+  }
+
+  .about-us__title {
+    margin-bottom: 40px;
+    width: 349px;
+  }
+
+  .about-us__description {
+    width: 347px;
+  }
+
+  .about-us__menu-item:last-child {
+    display: none;
+  }
+
+  .about-us__menu {
+    flex-direction: row;
+    row-gap: 34px;
+    column-gap: 30px;
+  }
+
+  .about-us__info {
+    row-gap: 30px;
+
+    flex-direction: column;
+  }
+
+  .about-us__image-group {
+    gap: unset;
+    justify-content: space-between;
+  }
+
+  .about-us__image {
+    width: 168px;
+    max-height: 180px;
+  }
+
+  .features__carouesel-buttons {
+    display: none;
+  }
+
+  .about-us__main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .on-map {
+    height: 700px;
+    position: relative;
+  }
+
+  .on-map__map {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -35px;
+    width: 100%;
+    height: 446px;
+  }
+}

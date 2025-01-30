@@ -1,0 +1,124 @@
+  
+  .about-us {
+    width: 100%;
+    height: 872px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #FFFFFF;
+  
+    &__title {
+      width: 527px;
+      margin-bottom: 60px;
+    }
+  
+    &__content {
+      position: relative;
+      background: #F4F5F5;
+      display: flex;
+      padding-top: 70px;
+      height: 494px;
+    }
+  
+    &__info {
+      display: flex;
+      row-gap: 60px;
+    }
+  
+    &__menu {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    &__menu-item-title {
+      white-space: nowrap;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 24px;
+      margin-bottom: 6px;
+      color: #303030;
+    }
+  
+    &__menu-item-subtitle {
+      white-space: nowrap;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: #777777;
+    }
+  
+    &__description {
+      width: 320px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #303030;
+    }
+  
+    &__menu-item-span {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  
+    &__main-image {
+      position: absolute;
+      right: 0;
+      top: -177px;
+      width: 615px;
+      height: 480px;
+    }
+  
+    &__image {
+      display: flex;
+      justify-content: center;
+      background-blend-mode: normal, multiply, normal;
+      width: 232px;
+      min-height: 210px;
+      background: url('../../assets/image/book.png'), #C79791;
+      background-position-y: -40px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  
+    &__image-2 {
+      background-color: #484848;
+    }
+  
+    &__image-group {
+      display: flex;
+      gap: 31px;
+      position: absolute;
+      bottom: -49px;
+      right: 120px;
+    }
+  
+    &__image-title {
+      margin-top: 50%;
+      width: 182px;
+      height: 60px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  
+    &__find-more {
+      display: inline-block;
+      font-family: 'Baron Neue';
+      font-size: 18px;
+      line-height: 22px;
+      border-bottom: #7A1B1B 2px solid;
+      text-align: center;
+      display: none;
+      color: #7A1B1B;
+    }
+  }
+  
+  .title {
+    font-family: 'Baron Neue', sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    color: #333333;
+  }
